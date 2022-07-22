@@ -93,7 +93,7 @@ RELEASE_TEXT_LOCATION = "file:////media/sda1/service/image/beta.txt"
 IMAGE_BASENAME = "my-image"
 #
 # Use minimal image version name, extended parts of version string or DISTRO_CUSTOM_VERSION of image file name will be ignored. Default = "1"
-# default sample: neutrino-image-hd51-20200926170603_ofgwrite.zip
+# default sample: neutrino-image-h7-20200926170603_ofgwrite.zip
 # extended sample: neutrino-image_hd51-20200926170603_v3.1.1-139-56_ofgwrite.zip
 # custom sample: neutrino-image_hd51-20200926170603_v2020.38_ofgwrite.zip
 #INHIBIT_EXTENDED_IMAGE_VERSION = "1"

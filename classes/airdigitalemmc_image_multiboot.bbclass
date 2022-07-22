@@ -2,7 +2,7 @@ inherit image_types
 
 IMAGE_ROOTFS = "${WORKDIR}/rootfs/linuxrootfs1"
 
-do_image_hdemmc[depends] = " \
+do_image_airdigitalemmc[depends] = " \
 	e2fsprogs-native:do_populate_sysroot \
 	parted-native:do_populate_sysroot \
 	dosfstools-native:do_populate_sysroot \
@@ -32,7 +32,7 @@ SWAP_PARTITION_OFFSET = "$(expr ${FOURTH_KERNEL_PARTITION_OFFSET} \+ ${KERNEL_PA
 MULTI_ROOTFS_PARTITION_OFFSET = "$(expr ${SWAP_PARTITION_OFFSET} \+ ${SWAP_PARTITION_SIZE})"
 STORAGE_PARTITION_OFFSET = "$(expr ${MULTI_ROOTFS_PARTITION_OFFSET} \+ ${MULTI_ROOTFS_PARTITION_SIZE})"
 
-IMAGE_CMD_hdemmc () {
+IMAGE_CMD_airdigitalemmc () {
     eval local COUNT=\"0\"
     eval local MIN_COUNT=\"60\"
     if [ $ROOTFS_SIZE -lt $MIN_COUNT ]; then

@@ -2,7 +2,7 @@ DESCRIPTION = "Resize Rootfs"
 LICENSE = "GPL-2.0"
 LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/GPL-2.0;md5=801f80980d171dd6425610833a22dbe6"
 
-COMPATIBLE_MACHINE = "^hd51$|^vs1500$|^hd60$|^hd61$|^hd66se$"
+COMPATIBLE_MACHINE = "^h7$|^h9$|^h9se$|^h9combo$|^h9combose$|^h10$|^h11$|^i55se$|^i55plus$"
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 RDEPENDS:${PN} = "e2fsprogs-resize2fs"
