@@ -20,7 +20,7 @@ KERNEL=="rtc0", SYMLINK+="rtc"
 KERNEL=="fb0", SYMLINK+="fb/0"
 
 #For compatibility reasons we need a symlink for eventdev
-KERNEL=="event1", SYMLINK+="input/nevis_ir"
+KERNEL=="event2", SYMLINK+="input/nevis_ir"
 
 # Make all input devices read-write to the input group
 SUBSYSTEM=="input", GROUP="input", MODE="660"
