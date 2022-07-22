@@ -5,12 +5,13 @@ LICENSE = "CLOSED"
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 PROVIDES = "virtual/libgles2 virtual/libgles1 virtual/egl virtual/libgbm"
-DEPENDS = "libdrm mesa"
+DEPENDS = "airdigital-v3ddriver-headers"
+# DEPENDS = "libdrm mesa"
 
 PV = "${SRCDATE}"
 PR = "r2"
 
-SRC_URI = "http://downloads.mutant-digital.net/v3ddriver/${MACHINE}-v3ddriver-${SRCDATE}.zip"
+SRC_URI = "http://source.mynonpublic.com/zgemma/${MACHINE}-v3ddriver-${SRCDATE}.zip"
 
 S = "${WORKDIR}"
 

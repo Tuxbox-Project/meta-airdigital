@@ -1,8 +1,8 @@
-SRCDATE = "20191101"
+SRCDATE = "20191110"
 
 require airdigital-v3ddriver.inc
 
-SRC_URI[md5sum] = "f34241fad282d570e3a754441ff2fb7d"
-SRC_URI[sha256sum] = "2b1b18172ab05567f205287abc75ccaca9f66c8349ec52c0defc2e705f17c411"
+SRC_URI[md5sum] = "9ab30bdb3103c1db0b9cf0989d383de8"
+SRC_URI[sha256sum] = "6278326c03f21c50e660dbb91f49154c67df3ea8bee55fe8fe6844338ab994ac"
 
 COMPATIBLE_MACHINE = "h7"
